@@ -175,6 +175,23 @@ public class SubSet {
 		return max;
 
 	}
+	
+	 public List<String> letterCombinations(String digits) {
+	        return subSeqPhone("",digits,new ArrayList<>());
+	    }
+
+	private ArrayList<String> subSeqPhone(String temp, String str, ArrayList arrayList) {
+		if(str.length()==0)
+		{
+			 arrayList.add(temp);
+			 return arrayList;
+		}
+		
+		int digit=str.charAt(0)+0;
+		
+		
+		return arrayList;
+	}
 
 	public static void main(String[] args) {
 
